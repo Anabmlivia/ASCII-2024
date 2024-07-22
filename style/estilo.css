@@ -179,6 +179,7 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+/* seção para fazer a responsividade das paginas em geral, ou seja, fazer com que elas se adaptem ao tamanho da tela*/
 @media (max-width:900px){
     .menu {
         display: none;
