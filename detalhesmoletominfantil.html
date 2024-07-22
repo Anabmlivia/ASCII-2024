@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/estilo.css">
+    <link rel="stylesheet" href="/style/detalhes.css">
+    <title>Detalhes do Produto</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/index.html"><h1>Spiral Wear</h1></a>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="/produtos.html">Produtos</a>
+            <a href="/sobre.html">Sobre nós</a>
+            <a href="/contato.html">Contato</a>
+        </div>
+        <div class="menu-t">
+            <a class="dropbtn" href="#"><i class="fa-solid fa-bars"></i></a>
+            <ul class="dropdown-content">
+                <a href="/index.html">Home</a>
+                <a href="/produtos.html">Produtos</a>
+                <a href="/sobre.html">Sobre nós</a>
+                <a href="/contato.html">Contato</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="carddetalhes">
+        <img src="/imagens/moletominafantil.jpg" class="imagemdetalhes" alt="">
+        <div class="detalhes-produto">
+            <h3>Moletom Infantil</h3>
+            <p class="descricao">Moletom infantil preto "Happy go lucky" com detalhe na barra da manga.
+                <br>Composição: 100% algodão.
+            </p>
+            <div class="opcoes">
+                <div class="opcao-cor">
+                    <label for="cor">Cor:</label>
+                    <select name="cor" id="cor">
+                        <option value="preto">Preto</option>
+                    </select>
+                </div>
+                <div class="opcao-tamanho">
+                    <label for="tamanho">Tamanho:</label>
+                    <select name="tamanho" id="tamanho">
+                        <option value="p">P</option>
+                        <option value="m">M</option>
+                        <option value="g">G</option>
+                    </select>
+                </div>
+                <div class="opcao-quantidade">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                </div>
+            </div>
+            <div class="preco">
+                <h4>R$ 120,00</h4>
+                <a href="/entrega.html" class="botao">Comprar</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/31b1cc330f.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Entrega</title>
+    <link rel="stylesheet" href="/style/entrega.css">
+    <link rel="stylesheet" href="/style/estilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/index.html"><h1>Spiral Wear</h1></a>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a href="/produtos.html">Produtos</a>
+            <a href="/sobre.html">Sobre nós</a>
+            <a href="/contato.html">Contato</a>
+        </div>
+        <div class="menu-t">
+            <a class="dropbtn" href="#"><i class="fa-solid fa-bars"></i></a>
+            <ul class="dropdown-content">
+                <a href="/index.html">Home</a>
+                <a href="/produtos.html">Produtos</a>
+                <a href="/sobre.html">Sobre nós</a>
+                <a href="/contato.html">Contato</a>
+            </ul>
+    </div>
+    </nav>
+    <!-- página para fazer o formulário de entrega -->
+    <div class="formulario">
+        <h2>Formulário de Entrega</h2>
+        <form action="/processar-compra" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required>
+            
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            
+            <label for="referencia">Ponto de Referência:</label>
+            <input type="text" id="referencia" name="referencia">
+            
+           <a href="/index.html" class="botton">Finalizar Compra</a>
+
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/31b1cc330f.js" crossorigin="anonymous"></script>
+</body>
+</html>
