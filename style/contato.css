@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(97,55,137);
+    background: linear-gradient(175deg, rgba(97,55,137,1) 28%, rgba(74,36,107,1) 46%, rgba(50,16,74,1) 61%);
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c998f600;
+    border-radius: 20px;
+    flex-grow: 2;
+    justify-content:space-evenly
+}
+a {
+    text-decoration: none;
+    color: #ffffff00;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #faf9fa; /* Roxo conforme o tema da loja */
+    margin-bottom: 20px;
+    font-family: "Caprice";
+}
+
+.info-contato {
+    text-align: center;
+}
+
+.info-contato p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    font-family: "Caprice";
+}
+
+.info-contato ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: "Caprice";
+}
+
+.info-contato li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.info-contato li a {
+    color: rgb(153, 150, 156);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-contato li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #a4a1a300;
+    color: #fcfafa;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    flex-grow: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+

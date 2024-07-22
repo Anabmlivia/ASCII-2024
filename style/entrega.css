@@ -1,0 +1,53 @@
+body {
+    font-family: "Caprice";
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px 0; /* Removendo o padding superior e inferior */
+    font-size: 1rem;
+    border: none; /* Removendo a borda padrão */
+    border-bottom: 1px solid #ccc; /* Adicionando uma borda inferior */
+    margin-bottom: 10px;
+    outline: none; /* Removendo o contorno ao focar */
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(97, 55, 137);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(106, 71, 138);
+}

@@ -1,0 +1,129 @@
+.carddetalhes {
+    display: flex;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagemdetalhes {
+    width: 40%;
+    object-fit: cover;
+}
+
+.detalhes-produto {
+    padding: 30px;
+    width: 60%; /* Ajustado para ocupar mais espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Caprice";
+}
+
+.detalhes-produto h3 {
+    font-size: 3rem;
+}
+
+.descricao {
+    font-size: 2rem;
+    color: #555;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.opcoes .opcao-cor,
+.opcoes .opcao-tamanho {
+    flex: 1; /* Para ocupar espaço igualmente */
+    margin-right: 10px; /* Espaçamento entre os elementos */
+}
+
+.opcoes label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.opcoes select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 3px solid rgb(97, 55, 137);
+    border-radius: 10px;
+    width: 50%; /* Ocupa todo o espaço disponível */
+}
+
+
+.opcao-quantidade label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.opcao-quantidade input[type="number"] {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 3px solid rgb(97, 55, 137);
+    width: 100px; /* Largura fixa para o campo de quantidade */
+}
+
+.preco {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Espaçamento entre a quantidade e o preço */
+}
+
+.preco h4 {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(97, 55, 137);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: rgb(106, 71, 138);
+}
+
+@media (max-width:900px){
+    @media (max-width: 900px) {
+        .carddetalhes {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .imagemdetalhes {
+            width: 100%;
+        }
+    
+        .detalhes-produto {
+            width: 100%;
+            padding: 20px; 
+        }
+    
+        .opcoes {
+            flex-direction: column;
+        }
+    
+        .opcoes .opcao-cor,
+        .opcoes .opcao-tamanho {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+    
+
+}

@@ -1,0 +1,82 @@
+.menucategoria{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    width: 50%;
+    text-decoration: none;
+}
+
+.menucategoria a{
+    color: rgb(116, 31, 201);
+    text-decoration: none;
+    font-family: "Caprice";
+    font-size: 2rem;
+}
+
+.listcardprodutos{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+
+}
+
+.cardprodutos{
+    background-color: rgb(97, 55, 137);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content:space-between;
+	align-items: center;
+    height: 55vh;
+}
+
+.cardprodutos .imagemCardprodutos{
+    align-items: start;
+    height: 70%;
+    margin: 0 3px;
+}
+
+.cardprodutos p h4 {
+    margin:0;
+}
+
+.preco p h4 {
+    margin:0;
+    font-family: "Caprice";
+
+}
+h4 {
+    margin:0;
+    font-family: "Caprice";
+    
+}
+
+.preco{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family: "Caprice";
+}
+
+@media (max-width:900px){
+    .listcardprodutos{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menucategoria{
+        flex-direction: column;
+    }
+}

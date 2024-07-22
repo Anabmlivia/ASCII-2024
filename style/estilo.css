@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Caprice";
+    src: url("/Caprice.ttf") , format("truetype");
+ }      
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height: 99.9vh;
+}
+
+.body_main{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display:flex;
+    flex-flow:row wrap;
+    background-color: rgb(97, 55, 137);
+    justify-content:center;
+    align-items:center;
+    flex-grow: 0;
+}
+/* flex-grow para resolver a questão de tamanho */
+/* 0 faz com que ele tenha o minimo tamanho necessario */
+/* 1 faz com que ele tenha o tamanho maximo possivel */
+/* tudo isso dentro do elemento pai */
+
+.logo{
+    flex:20%;
+    margin-left:10%;
+    text-align: center;
+    font-family: "Caprice";
+    color: white;
+    font-size:1rem;
+}
+
+.menu{
+    flex:60%;
+    text-align:right;
+    padding: 10px 0;
+    font-family: "Caprice";
+    margin-right: 10%;
+}
+
+ .container{
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+ .menu a{
+    color: white;
+    text-decoration:none;
+    font-size:20px;
+    padding: 20px 16px;
+ }
+
+
+ .menu a:hover{
+    color: rgb(222, 202, 248);
+    border-top:4px solid rgb(79, 24, 146);
+ }
+
+.banner{
+        position:relative;
+        flex-grow: 0;
+}
+
+
+.banner  h1{
+     margin:0;
+    }   
+
+.imagemBanner{
+    width: 100vw;
+    height: auto;
+}
+
+.botton{
+    top: 80%;
+    left: 30%;
+    background-color: rgb(97, 55, 137);
+    color: white;
+    padding: 10px 20px;
+    font-family: "Caprice";
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+#bottonBanner{
+    position: absolute;
+}
+
+.botton:hover{
+    background-color: rgb(79, 24, 146);
+}   
+
+.listcard{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    flex-grow: 1;
+    width: 100vw;
+}
+
+.card{
+    background-color: rgb(97, 55, 137);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    max-height: 30vh;
+    align-content: space-between;
+    justify-content:space-between;
+	align-items: center;
+}
+
+.card .imagemCard{
+    align-items: start;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0rem 2rem;
+}
+
+.text_botton{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0rem 2rem;
+}
+
+h2{
+    font-family: "Caprice";
+}
+
+html::-webkit-scrollbar {
+    width: 0.4vw; /* Largura da barra de rolagem vertical */
+    height: 0.8vh; /* Altura da barra de rolagem horizontal */
+  }
+  
+  html::-webkit-scrollbar-track {
+    background:  var(--neutral-100);
+    border-radius: 10px; /* Cantos arredondados da pista */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna para destaque */
+  }
+  
+  
+  html::-webkit-scrollbar-thumb:hover {
+    background:var(--primary-300); /* Cor do polegar ao passar o mouse */
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background-color: rgb(97, 55, 137);
+    border-radius: 1px;
+  }
+
+.menu-t{
+    display: none;
+}
+
+@media (max-width:900px){
+    .menu {
+        display: none;
+    }
+
+    .menu-t{
+        display: block;
+        margin: 5px;
+        width: 25px;
+        position:relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        z-index: 100;
+        position: absolute;
+        right: 0.5rem;
+        top: 0;
+        width: 160px;
+        font-family: "Caprice";
+        background-color: white;
+        color: rgb(50, 18, 74);
+        transition: all 0,3s ease-in;
+    }
+
+    .dropdown-content a {
+        color: rgb(50, 18, 74);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu-t:hover .dropdown-content {
+        display: block;
+        transition: all 0,3s ease-in;
+    }
+
+    .listcard{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .botton{
+        top: 60%;
+        left: 60%;
+        font-size: 1rem;
+    }
+}
